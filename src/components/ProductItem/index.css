@@ -1,0 +1,132 @@
+.product-item-container {
+  min-height: 100vh;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-item-inner-container {
+  display: flex;
+  flex-direction: row;
+}
+
+@media screen and (max-width: 767px) {
+  .product-item-inner-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.product-item-image-container {
+  width: 30%;
+  border-radius: 6px;
+  margin-right: 10px;
+  border: 1px solid;
+  padding: 35px 55px;
+}
+
+@media screen and (max-width: 767px) {
+  .product-item-image-container {
+    width: 80%;
+    border: none;
+  }
+}
+
+.product-item-img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.product-item-details-container {
+  width: 70%;
+  padding: 35px 45px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  font-family: 'Roboto';
+  border: 1px solid black;
+  border-radius: 6px;
+}
+
+@media screen and (max-width: 767px) {
+  .product-item-details-container {
+    width: 100%;
+    border: none;
+  }
+}
+
+.product-item-name {
+  font-size: 24px;
+  color: navy;
+}
+
+.product-item-price {
+  font-weight: 600;
+  font-size: 17px;
+}
+
+.product-item-details {
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.ratings-container {
+  display: flex;
+  width: 200px;
+  align-items: center;
+}
+
+.rating {
+  font-weight: 600;
+  margin-right: 7px;
+  font-size: 18px;
+}
+
+.rating-ans {
+  font-weight: 300;
+}
+
+.ratings-and-reviews-container {
+  display: flex;
+  align-items: center;
+  width: 200px;
+}
+
+.buttons-container {
+  display: flex;
+  align-items: center;
+  width: 150px;
+}
+
+.react-btn-icon {
+  width: 28px;
+  height: 28px;
+}
+
+.quantity {
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 19px;
+  font-weight: 600;
+}
+
+.plus-minus-btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.add-to-cart-btn {
+  border: none;
+  background-color: navy;
+  cursor: pointer;
+  border-radius: 3px;
+  padding: 10px 16px;
+  color: white;
+  font-weight: 600;
+  margin-top: 20px;
+}
